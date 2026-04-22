@@ -1,0 +1,6 @@
+En este ejercicio nos pide que creemos una aplicación en Java que permita gestionar los conciertos ofrecidos por artistas y grupos musicales a lo largo de un año. Asi que lo primero que hacemos es dividir todo por clases y explicando lo que hay en cada una.
+Artista: Es la clase modelo que representa a un artista o grupo musical, almacena los datos basicos del artista: su ID unico, nombre, genero musical y pais de origen. Implementa encapsulamiento mediante variables privadas ademas de getters y setters.
+Concierto: Esta clase modela los eventos musicales programados. Relaciona a un artista con un evento especifico. Contiene informacion sobre la fecha, el lugar de celebracion y el precio de la entrada. Sirve como puente entre los artistas y la venta de entradas.
+Entrada: Se encarga de gestionar la logica de las ventas de tickets. Registra cada transaccion de venta, vinculandola a un concierto especifico.Guarda el nombre del comprador, la cantidad de entradas adquiridas y la fecha de la compra.
+Clases DAO: Son clases de Acceso a Datos que manejas las operaciones de SQL y contiene todos los metodos especificos de SQL de cada un artista, concierto y Entrada.
+Main: Contiene el menu interactivo del programa que permite al usuario elegir la opcion que quiera del programa y gestiona los errores con las diferentes excepciones.
